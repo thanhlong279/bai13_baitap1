@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- -bai1:-->
+<!--<script>-->
+<!--let myColor = ["Red", "Green", "White", "Black"]-->
+<!--alert(myColor.join());-->
+<!--</script>-->
+<!-- -bai 2:-->
+<!--<script>-->
+<!--    arr = [1,2,4,6,5,7,8,0];-->
+<!--    arr1 = [arr[0]];-->
+<!--    for (let i = 0; i < 8; i++) {-->
+<!--        if (arr[i - 1] % 2 === 0 && arr[i] % 2 === 0) {-->
+<!--            arr1.push('-', arr[i]);-->
+<!--            }else {-->
+<!--                arr1.push(arr[i]);-->
+<!--            }-->
+<!--        }-->
+<!--    document.write(arr1.join());-->
+<!--</script>-->
+//bai 3:
+<script>
+let arr = "Thanh Long";
+let UPPER = "QWERTYUIOPASDFGHJKLZXCVBNM";
+let LOWER = "qwertyuiopasdfghjklzxcvbnm";
+let result = [];
+for (let i = 0; i < arr.length; i++) {
+if(UPPER.indexOf(arr[i]) !== -1){
+result .push(arr[i].toLowerCase());
+}else if(LOWER.indexOf(arr[i]) !== -1){
+//push them phan tu vao cuoi mang.
+result.push(arr[i].toUpperCase());
+}else{
+result.push(arr[i]);
+}
+}
+console.log(result.join(""));
+</script>
+</body>
+</html>
